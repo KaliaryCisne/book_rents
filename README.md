@@ -81,5 +81,3 @@ basic project with laravel framework.
   "book_id": "4"
 }
 ```
-
-5. 
