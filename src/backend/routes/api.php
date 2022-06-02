@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/users/register', [UserController::class, 'store']);
 Route::post('/auth/login', [JWTController::class, 'login']);
+Route::get('/', function () {
+    return "Build success...";
+});
 
 Route::group(['middleware' => 'auth:api'], function($router) {
     Route::group(['prefix' => 'users'], function ($router) {
